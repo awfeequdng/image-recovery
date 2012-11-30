@@ -88,7 +88,7 @@ static int two(global **contain){
 	global *container = *contain;
 	FILE *stream;/*file reading from*/
 	char *inp;
-    long long perc = 0; /*percentage complete*/
+        long long perc = 0; /*percentage complete*/
 	long long length = 0;/*length of import file*/
 	int a,b,c,d,t,co;
 	char *line = calloc(sizeof(int),MAXLEN);
@@ -105,8 +105,8 @@ static int two(global **contain){
 	   return False;
 	}
 	struct stat statbuf;
-    stat(inp, &statbuf);
-    length=statbuf.st_size;
+        stat(inp, &statbuf);
+        length=statbuf.st_size;
 	free(inp);
 	inp=NULL;
 	/*check if this is a wellformed file*/
